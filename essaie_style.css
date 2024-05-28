@@ -1,0 +1,692 @@
+:root{
+    --blue: rgb(0, 146, 208);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+@font-face {
+    font-family: myfont;
+    src: url(Comfortaa-Regular.ttf);
+}
+
+*{
+    font-family: myfont;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;border: none;
+    transform: all 2s linear;
+}
+
+.indication #hm,
+html.nuit{
+    --bg: #ffff;
+    --text: #222;
+    --box: rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+html{
+    --bg: rgb(0,23,34) ;
+    --text: #ffff;
+    --box: rgba(0, 146, 208, 0.2);
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+header{
+    display: flex;
+    height: 10vh;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--bg);
+}
+
+header .name a{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+ 
+header .name i{
+    color: rgb(0, 117, 234);
+}
+
+.grand{
+    display: flex;
+    align-items: center;
+}
+
+.indication{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+}
+
+.indication .pj,
+.indication #app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 6px 13px;
+}
+
+.indication #hm{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 6px 13px;
+}
+
+.indication #hm:hover,
+.indication .pj:hover,
+.indication #app:hover{
+    color: #fff;
+    background-color: var(--blue);
+}
+
+
+button{
+    color: white;
+    background-color: var(--bg);
+}
+
+#theme:hover{
+    cursor: pointer;
+}
+
+.indication .ctt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 6px 13px;
+    color: #fff;
+    background-color: var(--blue);
+}
+
+a{
+    color: var(--text);
+    font-size: .8rem;
+}
+
+#bar{
+    font-size: 13px;
+    display: none;
+}
+
+@keyframes displayMenu{
+    from{
+        left:-100%;
+    }
+    to{
+        left:0;
+    }
+}
+
+
+@keyframes hiddenMenu{
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.acceuil{
+    height: 100vh;    
+    display: flex;   
+    justify-content: center; 
+    border-bottom: solid 5px var(--blue);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.acceuil img{
+    height: 50vh;
+    border-radius: 50%;
+    border: solid 5px var(--blue);
+    margin-right: 40px;
+}
+
+.sous-title{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sous-title #gen{
+    font-size: 2.6rem;
+}
+
+.sous-title #fp{
+    font-size: .9rem;
+}
+
+.sous-title #gen i{
+    color: var(--blue);
+}
+
+
+
+
+
+
+
+
+/*DIFFERENTE FORMATION*/ 
+.product {
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.product-container { 
+    margin: 1rem 0;
+    border: solid;
+    box-shadow: var(--box) 0px 5px 15px 5px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+  
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product img{
+    width: 24vw;
+    height: 70vh;
+    transform: scale(1.2);
+}
+
+.product-card{
+    height: 70vh;
+    flex: 0 0 auto;
+    margin: 0 2.5rem;
+    position: relative; 
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.product-card:hover .sous-arduino,
+.product-card:hover .sous-pcb,
+.product-card:hover .sous-web{
+    left: 0%;
+    transition: .9s ease-in-out;
+}
+
+.sous-arduino,
+.sous-pcb,
+.sous-web{
+    height: 70vh;
+    width: 24vw;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    align-items: center;
+}
+
+.sous{
+    padding-left: 5px;   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.product-card span{
+    color: var(--blue);
+    background-color: #eeeeeef4;
+    padding: 4px;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*FORMULAIRE D'INSCRIPTION*/
+.formulaire{
+    border: solid 1px blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sous-formulaire{
+    border: solid 1px red;
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.product-category h3,
+.sous-formulaire h3{
+    color: var(--blue);
+}
+
+.form{
+    width: 100%;
+    border: solid green 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sous-form{
+    margin: 1rem 0;
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+    box-shadow: var(--box) 0px 5px 15px 5px; 
+    border-radius: 10px;
+}
+
+.multi-images{
+    position: relative;
+    height: 70vh;
+    width: 23.7vw;
+    border-radius: 5px;
+    animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(../Images/logo-mini.jpg);
+    }
+    25%{
+        background-image: url(../Images/pcb-mini.jpg);
+    }
+    50%{
+        background-image: url(../Images/web-mini.jpg);
+    }
+    75%{
+       background-image: url(../Images/arduino-mini.jpg);
+    }
+}
+
+@keyframes displayMenu{
+    from{
+        left:-100%;
+    }
+    to{
+        left:0;
+    }
+}
+
+
+@keyframes hiddenMenu{
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+.identifiant{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    width: 41.5vw;
+}
+
+.choisir,
+.adresse,
+.num-secour,
+.num-perso,
+.pre,
+.post,
+.nom{
+    position: relative;
+    top: 10px;
+}
+
+.form_input{
+    height: 30px;
+    width: 35vw;
+    font-size: .8rem;
+    border: solid 1px #DADCE0;
+    border-radius: .5rem;
+    outline: none;
+    background: none;
+    z-index: 1;
+    color: var(--text);
+    padding-left: .9rem;
+}
+
+.form_label{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: var(--text);
+    background-color: var(--bg);
+    padding: 0 .25rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.form_input:focus + .form_label{
+    top: -.5rem;
+    left: .8rem;
+    color: var(--blue);
+    font-size: .75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus)+ .form_label{
+    top: -.5rem;
+    left: .8rem;
+    font-size: .75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form_input:focus{
+    border: solid 1.5px var(--blue);
+}
+
+select{
+    background: none;
+    color: var(--text);
+    height: 30px;
+    width: 35vw;
+    font-size: .8rem;
+    border: solid 1px #DADCE0;
+    border-radius: .5rem;
+    padding-left: .9rem;
+    padding-right: 1rem;
+}
+
+option{
+    background: var(--bg);
+}
+
+.boutton{
+    display: flex;
+    justify-content: space-around;
+    width: 35vw;
+}
+
+.boutton .raz{ 
+    height: 4.2vh;
+    border-radius: 5px;  
+}
+
+.boutton .raz:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(218, 14, 14, 0.811);
+}
+
+.boutton #send{
+    height: 4.2vh;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--blue);
+}
+
+.boutton #send:hover{
+    cursor: pointer;
+}
+
+/*RESPONSIVE DESIDN*/
+@media screen and (max-width:750px){
+    .indication .pj,
+    .indication .ctt,
+    .indication #app,
+    .indication #hm{
+        padding: 4px 5px;
+    }
+    .sous-title #gen{
+        font-size: 2rem;
+    }   
+    .sous-title #fp{
+        font-size: .7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    header{
+        justify-content: space-between;
+    }
+    .indication{
+        border: solid 1px blue;
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 50vw;
+    }
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 20vw;
+    }
+    .acceuil{
+        align-items: center;
+        justify-content: center;
+    }
+    .color{
+        display: none;
+    }
+    .logo{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .acceuil .logo .sous-logo img{
+        width: 74vw;
+        height: 38vh;
+        display: flex;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .sous-title{
+        height: 15vh;
+        width: 80vw;
+        align-items: center;
+        position: relative;
+        left: 0;
+        z-index: -10;
+        animation: gen_dev 2.5s;
+    }
+    .sous-title #gen{
+        font-size: 1.6rem;
+    }  
+    .sous-title #fp{
+        font-size: .7rem;
+    } 
+    @keyframes gen_dev{
+        0%{
+            margin-top:-81%;
+            display: none;
+        }
+        50%{
+            margin-top: -50%;           
+            display: none;
+        }
+        100%{
+            margin-top: 0%;
+        }
+    }
+    .name{
+        padding-left: 2vw;  
+    }
+    .multi-images{
+        display: none;
+    }
+    .product img{
+        height: 40vh;
+        width: 50vw;
+    }
+    .product-container{
+        width: 80vw;
+    } 
+    .product-card{
+        margin: 0 .5rem;
+        display: flex;
+        justify-content: center;
+        width: 50vw;
+        height: 40vh;
+    }
+    .sous-arduino,
+    .sous-pcb,
+    .sous-web{
+        width: 50vw;
+        height: 40vh;
+    }
+    .sous-form{
+        width: 80vw;
+    }
+    .identifiant{
+        height: 50vh;
+        width: 80vw;
+    }
+    .form_input,.boutton,select{
+        width: 70vw;
+    } 
+    #bar{
+        display: block;
+    }
+    .mobile_Nav{
+        display: flex;
+        z-index: 1001;    
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        box-shadow: var(--box-shadow);
+    }
+    .display_Nav{
+        animation: displayMenu .8s alternate ease-in-out forwards;
+    }
+    .hidde_Nav{
+        animation: hiddenMenu .8s alternate ease-in-out forwards;
+    }
+    .sous-mobile_Nav{
+        background-color: var(--bg);
+        height: 100vh;
+        width: 70%;
+    }
+    .sous-mobile_Nav_mini{
+        background-color: var(--bg);
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .mobile_Nav .name i{
+        color: var(--blue);
+    }
+    .mobile_Nav .nav_list{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mobile_Nav .nav_list .ctt{
+        background-color: var(--blue);
+        border-radius: .5rem;
+        padding: 6px 13px;
+    }
+    .mobile_Nav .nav_list .pj,
+    .mobile_Nav .nav_list #app,
+    .mobile_Nav .nav_list #hm{
+        border: none;
+    }
+    .mobile_Nav .nav_list .pj:hover,
+    .mobile_Nav .nav_list #app:hover,
+    .mobile_Nav .nav_list #hm:hover{
+      border-bottom: inset 2px var(--blue);
+      border-radius: 2px;
+    } 
+    .sous-mobile_Nav2{
+        width: 30%;
+        background-color: rgba(224, 211, 211, 0);
+        backdrop-filter: blur(1px); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: grab;
+    }
+    .sous-mobile_Nav2 i{
+        font-size: 2rem;
+    }    
+}
+
+@media screen and (max-width: 321px) {
+    .sous-title #fp{
+        width: 80vw;
+        font-size: .6rem;
+    }
+}
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="essaie_style.css">
+</head>
+<body>
+    <header>
+       <div class="name">
+           <a><i class="fa-solid fa-code"></i>Gen.Dev.</a>
+       </div>
+       <div class="indication">
+           <a href="Index.html" id="hm">Acceuil</a>
+           <a id="app" href="#frm">Formation</a>
+           <a href="#sr" class="pj">S'inscrire</a>
+           <a href="./Pages/Contact.html" class="ctt">Contact nous</a>  
+       </div>
+       <div class="navigation">
+           <i class="fa-solid fa-bars" id="bar"></i>
+           <a id="theme"><button >&#9788;</button></a>  
+       </div>
+    </header>
+    <nav class="mobile_Nav" id="mobileNav">
+        <div class="sous-mobile_Nav">
+            <div class="sous-mobile_Nav_mini">
+                <div class="name">
+                    <a><i class="fa-solid fa-code"></i>Gen.Dev.</a>
+                </div>
+                <div class="nav_list">
+                    <a href="Index.html" id="hm">Acceuil</a>
+                    <a id="app" href="#frm">Formation</a>
+                    <a href="#sr" class="pj">S'inscrire</a>
+                    <a href="./Pages/Contact.html" class="ctt">Contact nous</a>  
+                </div>
+            </div>
+        </div>
+        <div class="sous-mobile_Nav2">
+            <i class="fa-solid fa-arrow-left-long"></i>
+        </div>
+    </nav>
+    <div class="information">
+        <div class="acceuil">
+           <div class="color"></div>
+            <div class="logo">
+                <div class="sous-logo">
+                    <img src="./Images/Logo.jpeg">
+                </div>                         
+               <div class="sous-title" >
+                  <a id="gen"><i class="fa-solid fa-code"></i>Gen.Dev.</a>
+                  <a id="fp">formation de Programmation & Electronique</a>
+               </div>
+            </div>
+        </div>
+
+        <div id="frm" class="product"  >
+
+            <div class="product-category">
+                <h3 >Formation disponible</h3>
+            </div>
+            
+            <div class="product-container">
+              
+
+                    <div class="product-card"> 
+                       <img src="./Images/pcb.jpg">
+                       <div class="sous-pcb">
+                            <div class="sous">
+                                <h3>Formation PCB & Proteus:</h3>     
+                                <p>Formation de conception de carte pcb<br> (Materiel et Outillage fournie à la formation)</p>                             
+                            </div>                                    
+                        </div>
+                        <span>25$</span>
+                   </div>
+
+                   <div class="product-card">
+                        <img src="./Images/arduino.jpg">
+                        <div  class="sous-arduino">
+                            <div class="sous">
+                                <h3>Formation Arduino:</h3> 
+                                <p>Formation complète en arduino & Materiel inclu</p> 
+                            </div>
+          
+                       </div>
+                       <span>50$</span>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="./Images/web.jpg">
+                        <div class="sous-web">
+                            <div class="sous">
+                                <h3>Formation Web:</h3>
+                                <p>Formation web de developpeur<br>(HTML5/CSS3 & Java script)</p>                     
+                            </div>                           
+                        </div>  
+                        <span>50$</span>  
+                   </div>
+               
+            </div>
+        </div>
+
+        <div class="formulaire">
+
+            <div class=" sous-formulaire" id="sr">
+                <h3>Formulaire d'inscription</h3>
+            </div>
+
+            <div class="form">
+
+                <div class="sous-form">
+
+                    <div class="multi-images">  
+                       <section class="img"></section>
+                    </div>
+
+                    <form class="identifiant" id="myform" Action="traitement.php">
+
+                       <div class="nom">
+                          <input class="form_input" type="text" id="nom_postnom">
+                          <label class="form_label" placeholder=" " for="nm">Nom & Postnom</label>
+                        </div>
+
+                        <div class="post">
+                           <input type="text" class="form_input" id="prenom" >
+                           <label class="form_label" for="username" >Prénom <i></i></label>
+                        </div>
+
+                        <div class="pre">
+                           <input type="text" class="form_input" id="num_tel">
+                           <label class="form_label">Numéro de téléphone</label>
+                       </div> 
+
+                        <div class="num-perso">
+                            <input type="tel" class="form_input" id="num_parent">
+                            <label class="form_label">numéro de parent</label>
+                        </div>
+
+                        <diV class="num-secour">
+                            <input type="tel" class="form_input" id="adresse" name="adresse">
+                            <label class="form_label" >Adresse/ Goma</label>
+                       </diV>
+
+                       <div class="adresse">
+                           <select class="select-style" id="formation" name="Formation">
+                               <option value="">choisir la formation</option>
+                               <option value="">PCB & Proteus (25$)</option>
+                               <option value="">Arduino (50$)</option>
+                               <option value="">Web  (50$)</option>
+                           </select>
+                            <label class="form_label"></label>
+                       </div>
+
+                        <div class="boutton">
+                            <input type="reset" value="Effacer" class="raz"> 
+                            <input type="submit" id="send" value="Envoyer" class="btn" >
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>          
+</body>
+<script src="essaie_script.js"></script>
+</html>
