@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
-    <link rel="stylesheet" href="essaie_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -107,15 +107,15 @@
                 <h3>Formulaire d'inscription</h3>
             </div>
 
-            <div class="form">
+            <div class="form ">
 
-                <div class="sous-form">
+                <div class="sous-form ">
 
                     <div class="multi-images">  
                        <section class="img"></section>
                     </div>
 
-                    <form class="identifiant" id="myform" Action="traitement.php">
+                    <form class="identifiant ">
 
                        <div class="nom">
                           <input class="form_input" type="text" id="nom_postnom">
@@ -144,17 +144,16 @@
 
                        <div class="adresse">
                            <select class="select-style" id="formation" name="Formation">
-                               <option value="">choisir la formation</option>
-                               <option value="">PCB & Proteus (25$)</option>
-                               <option value="">Arduino (50$)</option>
-                               <option value="">Web  (50$)</option>
+                               <option value="PCB & Proteus (25$)">PCB & Proteus (25$)</option>
+                               <option value="Arduino (50$)">Arduino (50$)</option>
+                               <option value="Web (50$)">Web (50$)</option>
                            </select>
                             <label class="form_label"></label>
                        </div>
 
-                        <div class="boutton">
+                        <div class="boutton ">
                             <input type="reset" value="Effacer" class="raz"> 
-                            <input type="submit" id="send" value="Envoyer" class="btn" >
+                            <input type="button" id="send" value="Envoyer" class="btn" >
                         </div> 
                     </form>
                 </div>
@@ -162,5 +161,5 @@
         </div>
     </div>          
 </body>
-<script src="essaie_script.js"></script>
+<script src="index.js"></script>
 </html>

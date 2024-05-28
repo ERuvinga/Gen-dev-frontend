@@ -1,0 +1,106 @@
+:root{
+    --bg:rgb(0,23,34) ;    
+    --blue: rgb(0, 146, 208);
+}
+@font-face {
+    font-family: myfont;
+    src: url(./font/Comfortaa-Regular.ttf);
+}
+
+*{
+    font-family: myfont;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;border: none;
+    text-decoration: none;
+    transform: all 2s linear;
+    margin: 0;
+}
+
+body{
+    background-color:rgb(0,23,34);
+}
+
+.sous-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.information{
+    border-radius: 1rem;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(7px);    
+    background-color: rgba(224, 211, 211, 0.3);
+}
+
+.detail{
+    height: 45vh;
+    width: 19vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    animation: info 2s;
+}
+
+.logo img{
+    border-radius: 50%;
+    height: 45vh;
+    width: 20.8vw;
+    z-index: 2;
+}
+
+a{
+   color: #ffff;
+   font-size: .9rem;
+}
+
+i{
+    color: var(--blue);
+    font-size: 1rem;
+    padding-right: .5rem;
+}
+
+.whatsapp,.gmail,
+.twitter,.loc,.date{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes info{
+    0%{
+        position: relative;
+        left:-40%;
+        display: none;
+        z-index: -1;
+    }
+    100%{
+        position: relative;
+        left: 0%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:500px){
+    .information{
+        height: 40vh;
+        width: 90vw;
+    }
+    .logo img{
+        height: 35vh;
+        width: 40vw;
+    }
+    .detail{      
+        height: 35vh;
+        width: 40vw;
+    }
+    a{
+        font-size: .8rem;
+    }
+}
