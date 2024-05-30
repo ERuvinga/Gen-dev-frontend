@@ -13,7 +13,7 @@
            <a><i class="fa-solid fa-code"></i>Gen.Dev.</a>
        </div>
        <div class="indication">
-           <a href="Index.html" id="hm">Acceuil</a>
+           <a href="index.html" id="hm">Acceuil</a>
            <a id="app" href="#frm">Formation</a>
            <a href="#sr" class="pj">S'inscrire</a>
            <a href="./Pages/Contact.html" class="ctt">Contact nous</a>  
@@ -119,7 +119,7 @@
 
                        <div class="nom">
                           <input class="form_input" type="text" id="nom_postnom">
-                          <label class="form_label" placeholder=" " for="nm">Nom & Postnom</label>
+                          <label class="form_label"  for="nm">Nom</label>
                         </div>
 
                         <div class="post">
@@ -128,17 +128,17 @@
                         </div>
 
                         <div class="pre">
-                           <input type="text" class="form_input" id="num_tel">
+                           <input type="number" class="form_input" id="num_tel">
                            <label class="form_label">Numéro de téléphone</label>
                        </div> 
 
                         <div class="num-perso">
-                            <input type="tel" class="form_input" id="num_parent">
+                            <input type="number" class="form_input" id="num_parent">
                             <label class="form_label">numéro de parent</label>
                         </div>
 
                         <diV class="num-secour">
-                            <input type="tel" class="form_input" id="adresse" name="adresse">
+                            <input type="text" class="form_input" id="adresse" name="adresse">
                             <label class="form_label" >Adresse/ Goma</label>
                        </diV>
 
@@ -159,7 +159,19 @@
                 </div>
             </div>
         </div>
-    </div>          
+    </div>
+    <footer>
+        <div class="">
+            <div class="backend">
+                <form>
+                   <input type="text" placeholder="nom admin">
+                   <input type="password" placeholder="mot de passe">
+                   <input type="reset" value="effacer">
+                   <input type="submit" value="identifier">
+                </form>
+            </div>
+       </div>    
+    </footer>          
 </body>
 <script src="index.js"></script>
 </html>

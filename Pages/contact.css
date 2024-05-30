@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: myfont;
-    src: url(./font/Comfortaa-Regular.ttf);
+    src: url(../Comfortaa-Regular.ttf);
 }
 
 *{
@@ -35,7 +35,6 @@ body{
     height: 50vh;
     justify-content: space-evenly;
     align-items: center;
-    backdrop-filter: blur(7px);    
     background-color: rgba(224, 211, 211, 0.3);
 }
 
@@ -89,11 +88,11 @@ i{
 
 @media screen and (max-width:500px){
     .information{
-        height: 40vh;
+        height: 35vh;
         width: 90vw;
     }
     .logo img{
-        height: 35vh;
+        height: 32vh;
         width: 40vw;
     }
     .detail{      

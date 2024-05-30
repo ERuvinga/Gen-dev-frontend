@@ -151,18 +151,12 @@ a{
     }
 }
 
-
-
-
-
-
-
-
-
-
+.mobile_Nav{
+    display: none;
+}
 
 .acceuil{
-    height: 100vh;    
+    height: 98vh;    
     display: flex;   
     justify-content: center; 
     border-bottom: solid 5px var(--blue);
@@ -219,7 +213,6 @@ a{
   
 .product-container { 
     margin: 1rem 0;
-    border: solid;
     box-shadow: var(--box) 0px 5px 15px 5px;
     border-radius: 9px;
     display: flex;
@@ -324,7 +317,6 @@ a{
 
 .sous-form{
     margin: 1rem 0;
-    border: solid;
     display: flex;
     justify-content: space-between;
     width: 65vw;
@@ -377,6 +369,7 @@ a{
 }
 
 .identifiant{
+    order: solid 2px green;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -394,13 +387,12 @@ a{
 .post,
 .nom{
     position: relative;
-    top: 10px;
     width: 80%;
     margin: auto;
 }
 
 .form_input{
-    padding: 12px;
+    padding: 5px;
     width: 100%;
     font-size: 16px;
     border: solid 1px #DADCE0;
@@ -450,7 +442,7 @@ select{
     font-size: .8rem;
     border: solid 1px #DADCE0;
     border-radius: .5rem;
-    padding: 12px;
+    padding: 5px;
 }
 
 option{
@@ -461,12 +453,13 @@ option{
     display: flex;
     justify-content: space-around;
     gap: 30px;
-    width: 100%;
+    order: solid 1px red;
+    width: 80%;
 }
 
 .boutton .raz{ 
     border-radius: 5px;  
-    padding: 10px 30px;
+    padding: 5px 15px;
 }
 
 .boutton .raz:hover{
@@ -479,7 +472,7 @@ option{
     border-radius: 5px;
     color: #fff;
     background-color: var(--blue);
-    padding: 10px 30px;
+    padding: 5px 15px;
 }
 
 .boutton #send:hover{
@@ -502,14 +495,6 @@ option{
     }
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width:500px){
     header{
         justify-content: space-between;
@@ -526,14 +511,14 @@ option{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 20vw;
+        width: 40vw;
+    }
+    button,#bar{
+        font-size: 1rem;
     }
     .acceuil{
         align-items: center;
         justify-content: center;
-    }
-    .color{
-        display: none;
     }
     .logo{
        display: flex;
@@ -556,7 +541,7 @@ option{
         position: relative;
         left: 0;
         z-index: -10;
-        animation: gen_dev 2.5s;
+        animation: gen_dev 1.7s;
     }
     .sous-title #gen{
         font-size: 1.6rem;
@@ -570,7 +555,7 @@ option{
             display: none;
         }
         50%{
-            margin-top: -50%;           
+            argin-top: -50%;           
             display: none;
         }
         100%{
@@ -604,14 +589,24 @@ option{
         height: 40vh;
     }
     .sous-form{
-        width: 80vw;
+        justify-content: center;
+        width: 90vw;
     }
     .identifiant{
+        margin: 10px 0px;
         height: 50vh;
         width: 80vw;
     }
-    .form_input,.boutton,select{
-        width: 70vw;
+    .choisir,
+    .adresse,
+    .num-secour,
+    .num-perso,
+    .pre,
+    .post,
+    .nom{
+        position: relative;
+        width: 100%;
+        margin: auto;
     } 
     #bar{
         display: block;
